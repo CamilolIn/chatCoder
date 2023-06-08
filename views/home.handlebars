@@ -1,0 +1,22 @@
+<div class="container">
+    <div>
+      <h1>Chat Coder</h1>
+      <div id="caja" class="caja"></div>
+    </div>
+    <div class="mb-3">
+      <form onsubmit="return addmessage()">
+        <div>
+          <input type="text" id="username" class="form-control" placeholder="Tu nombre ...">
+        </div>
+        <div>
+          <textarea class="form-control" id="text" rows="3" placeholder="Tu mensaje ..."></textarea>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-primary mb-3" value="Enviar">
+        </div>
+      </form>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
